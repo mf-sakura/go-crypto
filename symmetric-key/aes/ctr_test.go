@@ -79,7 +79,7 @@ func TestDecryptCTR(t *testing.T) {
 	key := []byte("passw0rdpassw0rdpassw0rdpassw0rd")
 	iv := key[:aes.BlockSize]
 	wrongIV := key[:aes.BlockSize+1]
-	plainText := []byte("Bob loves Alice.")
+	plainText := []byte("trafioshioabvoizabioiodABN+FOjcaosjfc;opjawse;fhciopshoihzdoi")
 	block, err := aes.NewCipher(key)
 	if err != nil {
 		t.Fatalf("failed to create block. error:%v\n", err)
