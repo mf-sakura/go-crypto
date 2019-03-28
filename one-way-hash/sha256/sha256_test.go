@@ -38,8 +38,7 @@ func TestSumSha256(t *testing.T) {
 }
 
 func Benchmark_SumSha256(b *testing.B) {
-	Benchmark_SumSha256-8   	 5000000	       254 ns/op	       0 B/op	       0 allocs/op
-
+	// Benchmark_SumSha256-8   	 5000000	       254 ns/op	       0 B/op	       0 allocs/op
 	input := []byte("this is test")
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
